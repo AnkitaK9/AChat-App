@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-image: url('bg.gif');
+    background-size: contain;
+    font-family: 'Roboto';
+}
+section.mainSection {
+    width: 550px;
+    max-width: 90%;
+    background: rgb(237, 199, 205);
+    box-shadow: 0 10px 15px -3px rgba(209, 64, 64, 0.1), 0 4px 6px -2px rgba(26, 14, 14, 0.05);
+}
+.topbar {
+    padding: 20px;
+    background: powderblue;
+    display: flex;
+    align-items: center;
+}
+.topbar h1 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #444;
+    margin-left: 10px;
+}
+.MessageArea{
+    height: 400px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    overflow-y:auto;
+    padding-top: 20px;
+    background-image: url('back.jpg');
+    background-size: cover;
+    position: relative;
+
+}
+textarea {
+    width: 550px;
+    border: none;
+    padding: 15px;
+    font-size: 16px;
+    background: powderblue;
+    outline: none;
+    position: fixed;
+}
+
+.message {
+    padding: 20px; 
+    border-radius: 4px; 
+    margin-bottom: 40px;
+    max-width: 1000;
+    position: relative;
+}
+.IncomingMessage {
+    background:lightblue;
+    color: black; 
+}
+.OutgoingMessage {
+    background: lightskyblue;
+    color: black;
+    margin-left: auto;
+}
+.message h4 {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    color: black;
+    font-size: 14px;
+}
